@@ -39,7 +39,7 @@ routes.get('/incidents', celebrate({
   })
 }),IncidentController.index);
 
-//insere um incidents - Falta VALIDAR (HEADERS and BODY)
+//insere um incidents 
 routes.post('/incidents', celebrate({
   [Segments.HEADERS]: Joi.object({
     authorization: Joi.string().required(),
